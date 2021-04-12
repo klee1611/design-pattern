@@ -1,4 +1,4 @@
-from src.singleton import Singleton
+from design_pattern.src.singleton import Singleton
 
 
 class TestSingleton():
