@@ -1,4 +1,4 @@
-from design_pattern.src.simple_factory import SimpleFactory, ProductInterface
+from simple_factory import SimpleFactory, ProductInterface
 
 class TestSimpleFactory():
 
