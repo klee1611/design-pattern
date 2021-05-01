@@ -1,4 +1,4 @@
-from simple_factory import SimpleFactory, ProductInterface
+from ..simple_factory import SimpleFactory
 
 class TestSimpleFactory():
 
