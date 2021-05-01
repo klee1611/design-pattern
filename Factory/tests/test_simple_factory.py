@@ -1,5 +1,6 @@
 from ..simple_factory import SimpleFactory
 
+
 class TestSimpleFactory():
 
     def test_simple_factory(self):

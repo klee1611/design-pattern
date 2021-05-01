@@ -10,7 +10,11 @@ class TestSingleton():
         assert id(singleton_1) == id(singleton_2)
 
         assert singleton_1.x == singleton_2.x
-        print(f'singleton_1.x: {singleton_1.x}, singleton_2.x: {singleton_2.x}')
+        print(
+            f'singleton_1.x: {singleton_1.x}, singleton_2.x: {singleton_2.x}'
+        )
 
         assert singleton_1.y == singleton_2.y
-        print(f'singleton_1.y: {singleton_1.y}, singleton_2.y: {singleton_2.y}')
+        print(
+            f'singleton_1.y: {singleton_1.y}, singleton_2.y: {singleton_2.y}'
+        )

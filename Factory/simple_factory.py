@@ -1,7 +1,7 @@
 class ProductInterface():
     def get_product_name(self):
         raise RuntimeError(
-            f'Virtaul product method. Should not be called directly'
+            'Virtaul product method. Should not be called directly'
         )
 
 

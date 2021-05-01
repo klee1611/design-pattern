@@ -1,5 +1,6 @@
 from ..factory_method import ProductAFactory, ProductBFactory
 
+
 class TestSimpleFactory():
 
     def test_simple_factory(self):
