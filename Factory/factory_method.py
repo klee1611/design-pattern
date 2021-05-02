@@ -19,20 +19,25 @@ class ConcreteProductB(ProductInterface):
         return name
 
 
-class FactoryInterface():
+class ProductFactory():
     def gen_product(self):
         raise RuntimeError(
             'Virtual factory method. Should not be called directly'
         )
 
+    def get_product_name(self):
+        product = self.gen_product()
+        product_name = product.get_product_name()
+        return product_name
 
-class ProductAFactory(FactoryInterface):
+
+class ProductAFactory(ProductFactory):
     def gen_product(self):
         print('Generate product A')
         return ConcreteProductA()
 
 
-class ProductBFactory(FactoryInterface):
+class ProductBFactory(ProductFactory):
     def gen_product(self):
         print('Generate product B')
         return ConcreteProductB()
